@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    function createParagraph() {
+    let variable1 = document.createElement('p');
+    variable1.textContent = 'has presionado el Boton!';
+    document.body.appendChild(variable1);
+  }
+
+  const boton = document.querySelectorAll('button');
+
+  for(let i = 0; i < boton.length ; i++) {
+    boton[i].addEventListener('click', createParagraph);
+  }
+});
+
+
+</script>
+</head>
+<body>
+    <button>Presiona el boton</button>
