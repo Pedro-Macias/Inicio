@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>curso keepcodign - variables 2</title>
+</head>
+<body>
+    <script>
+    // QUE PODEMOS HACER CON LAS VARIABLES
+    // OPERADORES BINARIOS
+      document.write(`<h3>Operadores Binarios</h3>`);
+
+        // SUMA
+        document.write(`<h4>Suma</h4>`)
+            let suma = 1 + 1;
+        document.write(`<p>suma " let suma = 1 + 1; "</p>`);
+            document.write(suma); // resultado 2 por pantalla
+            console.log(suma); // resultado 2 por consola
+        // RESTA
+        document.write(`<h4>Resta</h4>`)
+            let resta = 5 - 1;
+        document.write(`<p>resta " let resta = 5 - 1; "</p>`);
+            document.write(resta); // resultado 4 por pantalla
+            console.log(resta); // resultado 4 por consola    
+         // MULTIPLICACION
+         document.write(`<h4>Multiplicacion</h4>`)
+            let multi = 5 * 2;
+         document.write(`<p>Multiplicacion " let multi = 5 * 2; "</p>`);
+            document.write(multi); // resultado 10 por pantalla
+            console.log(multi); // resultado 10 por consola 
+        // DIVISION
+        document.write(`<h4>Division</h4>`)
+            let divi = 6 / 2;
+        document.write(`<p>Division " let divi = 6 / 2; "</p>`);
+            document.write(divi); // resultado 3 por pantalla
+            console.log(divi); // resultado 3 por consola   
+         // RESTO
+         document.write(`<h4>Resto</h4>`)
+            let resto = 5 % 2;
+        document.write(`<p>Resto nos da el resto entero de la division " let resto = 5 % 2; "</p>`);
+            document.write(resto); // resultado 1 por pantalla
+            console.log(resto); // resultado 1 por consola     
+        // MAYOR QUE
+        document.write(`<h4>Mayor que</h4>`)
+            let mayor = 5 > 2;
+        document.write(`<p>Mayor que " let mayor = 5 > 2; " el resultado es true o false</p>`);
+            document.write(mayor); // resultado true por pantalla
+            console.log(mayor); // resultado true por consola    
+         // MENOR QUE
+        document.write(`<h4>Menor que</h4>`)
+            let menor = 7 < 2;
+        document.write(`<p>Menor que " let menor = 7 < 2; " el resultado es true o false</p>`);
+            document.write(menor); // resultado false por pantalla
+            console.log(menor); // resultado false por consola
+        // MAYOR O IGUAL QUE
+        document.write(`<h4>Mayor o igual que</h4>`)
+            let myOi = 7 >= 2;
+        document.write(`<p>Mayor o igual que " let myOi = 7 >= 2; " el resultado es true o false</p>`);
+            document.write(myOi); // resultado true por pantalla
+            console.log(myOi); // resultado true por consola  
+         // MENOR O IGUAL QUE
+        document.write(`<h4>Menor o igual que</h4>`)
+            let mnOi = 7 <= 2;
+        document.write(`<p>Menor o igual que " let mnOi = 7 <= 2; " el resultado es true o false</p>`);
+            document.write(mnOi); // resultado false por pantalla
+            console.log(mnOi); // resultado false por consola
+       // IGUAL QUE
+        document.write(`<h4>igual que</h4>`)
+            let igual = `a` === `b`;
+        document.write(`<p> igual que " let igual = 'a' === 'b'; " el resultado es true o false</p>`);
+            document.write(igual); // resultado false por pantalla
+            console.log(igual); // resultado false por consola  
+         // DESIGUAL QUE - DISITINTO QUE
+        document.write(`<h4>desigual que o distinto que</h4>`)
+            let digual = `a` !== `b`;
+        document.write(`<p> desigual que " let digual = 'a' !== 'b'; " el resultado es true o false</p>`);
+            document.write(digual); // resultado true por pantalla
+            console.log(digual); // resultado true por consola  
+        // AND LOGICO
+         document.write(`<h4>And Logico , si se cumplen las dos condiciones</h4>`)
+            let andlogico = (true && false) ;
+         document.write(`<p> and logico que " let andlogico = true $$ false ; " el resultado es true o false</p>`);
+            document.write(andlogico); // resultado false por pantalla
+            console.log(andlogico); // resultado false por consola
+        // OR LOGICO
+        document.write(`<h4>Or Logico , si se cumplen una de las dos condiciones</h4>`)
+            let orlogico = (true || false) ;
+        document.write(`<p> and logico que " let orlogico = true || false ; " el resultado es true o false</p>`);
+        document.write(orlogico); // resultado true por pantalla
+        console.log(orlogico); // resultado true por consola       
+        
+ 
+    
+        
+    </script>
+</body>
+</html>
