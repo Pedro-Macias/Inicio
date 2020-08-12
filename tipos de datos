@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> tipos de datos</title>
+</head>
+<body>
+    <h1>Tipos de Datos</h1>
+        <h2> Primitivos</h2>
+        <!-- numeros -->
+            <h3>Numeros</h3>
+                <p> se declaran " var number = 14; "</p>
+            <script>
+                var number = 14 ;
+                document.write(number); // por pantalla
+                console.log(number); // por consola
+            </script>    
+        <!-- string ( texto) -->
+            <h3>String</h3>`);
+                <p> se indican con comillas simples , dobles o acento invertido </p>  
+                <p>con comillas simlples " var nombre ='nombre'; " - con comillas dobles " var name ="otro nombre"; " </p>
+            <script>
+        /* se indican con comillas simples , dobles o acento invertido */
+                var nombre ='nombre';
+                var name ="otro nombre";
+                document.write(nombre,`</br>`); // por pantalla
+                document.write(name,`</br>`); // por pantalla
+                console.log(nombre); // por consola
+                console.log(name);  // por consola
+
+            </script>
+                <p> con los acentos invertidos ` ` permite poner variable en medio y codigo HTML</p>
+                <p> para insertar una variable se utiliza " ${variable} "  </p> 
+            <script>       
+            var cadena =`el  tiene ${number} años`; // permite poner una variable en medio
+            // con los acentos `` tambien se puede meter codigo HTML
+            document.write(cadena);
+            console.log (cadena);    
+            </script>
+            
+            <h3>Booleanos</h3>
+                <p> solo son  true o false</p>
+                <p> ejemplos  " let a = ( 5 == 5 ); " resultado true</p>
+                <script>
+                    let a = ( 5 == 5 );
+                    document.write(a);// por pantalla
+                    console.log(a); // por consola
+                </script>
+                <p> ejemplos  " let b = ( 5 == 6 ); " resultado false</p>
+                <script>
+                    let b = ( 5 == 6 );
+                    document.write(b);//por pantalla
+                    console.log(b); //por consola
+                </script>
+            <h3>undefined</h3>
+                <p>cuando no se le da un valor</p>
+                <p>la varible existe pero no se le da valor  "let clase "  como no se le da valor el resultado es undefined </p>
+                <script>
+                    let clase
+                    document.write(clase); // por pantalla
+                    console.log(clase); //por consola
+                </script>        
+            <h3>Null</h3>
+                <p>cuando la variable no exite</p>
+                <p>ejemplo " console.log (null);"</p>
+                <script>
+                document.write(null); // por pantall
+                console.log(null);  // por consola
+                </script> 
+        <h2>COMPUESTOS </h2>
+            <h3> Array </h3>
+                <p> ejemplo de array " let numbers = [1,2,3,4,5,6]; " </p>
+                <script>
+                let numbers = [1,2,3,4,5,6];
+                document.write(numbers); //por pantalla
+                console.log(numbers); // por consola
+                </script>
+                
+            <h3> Object </h3>
+                <p> ejemplo de objetc " let data = { nombre:"Pedro", apellido:"Sanchez", edad: 51 }; "</p>
+                <script>
+                let data = { nombre:"Pedro", apellido:"Sanchez", edad: 51 };
+                document.write(data); // por pantalla 
+                console.log(data); // por consola 
+                </script>
+
+        <h2>OPERADOR TYPEOF </h2>
+                <p>te devuelve el tipo de dato</p>
+                <p>ejemplo " console.log(typeof number); //  develve number "</p>
+                <script>
+                    document.write(typeof number); // por pantalla
+                    console.log(typeof number); // por consola
+                </script>
+     
+     
+               
+
+</body>
+</html>
