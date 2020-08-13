@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>condicionales</title>
+</head>
+<body>
+    <script>
+      //CONDICIONALES
+    /* 
+    el navegador lee el codigo JS de arriba hacia abajo
+    */
+   // EJEMPLO
+    console.log(` hola `);
+    console.log(` mundo`);
+    console.log(` Pedro `);
+
+    /* 
+    el programa lo ejecuta por el orden  que le
+    hemos puesto , en este caso 
+    " hola mundo Pedro "
+    */
+    
+    // las condicionales permiten romper ese flujo
+    console.log(` hola `); 
+        // si le ponemos esta condicion 5 mayor que 8 , no lo imprimira
+    if (5>8)console.log(` mundo`);
+    console.log(` Pedro `);
+    /* 
+    el programa ejecuta el codigo y como la condicion
+    no se cumple lo salta e imprime el siguiente
+    " hola Pedro "
+   */ 
+    /* una condicional pregunta por una condicion , si se cumple
+    el codigo se ejecuta , si no se cumple no se ejecuta 
+    */
+
+     //ESTRUCTURA DE UNA CONDICION
+     
+     // una sola linea
+     // if(condicion ) // hacer algo
+
+     //EJEMPLO
+     if (5<7)console.log(`se ejecuta`);
+     
+     // un bloque ( las variables declaradas dentro del bloque no existen fuera)
+     /*
+      if(condicion){
+         hacer algo
+        }
+     */
+    
+       // EJEMPLO de variable dentro del bloque
+        {
+            let dentroBloque = `esoy dentro del bloque`;
+            console.log(dentroBloque);
+        } 
+       // console.log(dentroBloque); // resultado en consola " dentroBloque is not defined "
+
+       // una variable fuera del bloque si puede ponerse dentro del bloque , se denomina SCOPE
+        let fueraBloque = `estoy fuera del bloque`;
+        {
+            console.log(fueraBloque);
+        }
+     // USAR CONDICIONAL EN UN BLOQUE
+        // Cuando el if devuelva mas lineas de codigo , 2 o mas
+        if(`a`=== `a`){
+            console.log(`primera orden`);
+            console.log(`segunda orden`);
+        }
+
+      // PONER VARIAS CONDICIONES
+        /* 
+        la primera ponemos if (si)  
+        else if ( si no)
+        else ( si no se cumle ninguna)
+        */ 
+        // EJEMPLO 1
+        if (1>2){
+            console.log(`primera condicion`); // no se cumple
+        } else if(1===1){
+            console.log(`segunda condicion`); // se cumple y se imprime
+        }else{
+            console.log(`no se cumple ninguna`);
+        }
+        // EJEMPLO 2
+        if (2===3){
+            console.log(`primera condicion`) // no se cumple
+        } else if(2>3){
+            console.log(`segunda condicion`); // no se cumple
+        }else{
+            console.log(`no se cumplia ninguna condicion`); // por lo tanto se salta al else
+        }
+        //EJEMPLO 3
+          /* 
+            Si se cumple la primera condicion , ya no pasa al resto
+            aunque el resto tambien se cumpla
+           */
+          if(3>2){
+              console.log(`primera condicion`); // cumple la condicion y se ejecuta
+          } else if (5>7){
+              console.log(`segunda condicion`); // cumple la condicion ,pero como se cumplia la primera se lo salta
+          }else{
+              console.log(`no se cumplia la condicion`);
+          }
+          console.log(`yo ya estoy fuera del bloque y me ejecuto siempre`); // esta fuera del bloque y se ejecuta siempre
+    </script>
+</body>
+</html>
