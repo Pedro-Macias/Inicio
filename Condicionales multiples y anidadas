@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ed-team - condicionales multiples y anidadas</title>
+</head>
+<body>
+    <script>
+    // CONDICIONES MULTIPLES
+
+// CON  && (y) las dos condicones tienen que ser verdadero
+    //EJEMPLO 1
+    if (3 > 2 && 3 < 5) {
+        console.log(`se cumplen las 2 condiciones " 3 > 2 && 3 < 5 "`); // como 3 es mayor que 2 y 3 es menor que 5 pasa la condicion
+    }else {
+        console.log(`no paso la condicion`);
+    }
+    //EJEMPLO 2
+    if (20 < 5 && 10 === 10){
+        console.log(`paso la condicion`); // 20 no es menor que 5 por lo que no cumple la condicion
+    }else{
+        console.log(`no cumplia la condicion`);
+    }
+// con || (o) si una es verdadera vale
+    //EJEMPLO 1
+    if (8 > 5 || 3<5){
+        console.log(`si cumple una condicion  " 3 < 5 " `); // en este caso se cumple la 2 condicion , por lo que imprime
+    }else{
+        console.log(`no cumple la condicion`);
+    }
+  
+  // EJEMPLO VARIAS CONDICIONES MULTIPLES
+    if (1 > 2 && 10 < 1 ){
+        console.log(`cumple las 2 condiciones`);
+    }  else if (1 === 1 || 2 > 1){
+        console.log(`si cumple una de las condiciones`);
+    }else{
+        console.log(`no cumple ninguna de las condiciones`);
+    }
+
+
+  // CONDICIONES ANIDADAS
+    // es una condicion dentro de otra
+    
+    // EJEMPLO 1
+    if( 2 > 1){
+        console.log(`paso la condicion 1`); // la condicion se cumple y se imprime
+        if (3 < 1){
+            console.log(`paso la condicion 1.1`); // la condicion no se cumple
+        }
+    }else{
+        console.log(`no paso ninguna condicion`);
+    }
+
+    // EJEMPLO 2
+    if (`a` !== `b`){
+        console.log(`paso la condicion 1`); // se cumple la condicion 1
+        if ( 1 === 1){
+            console.log(`paso la condicion 1.1`); // tambien se cumple la condicion 1.1
+        }
+    }else if (`a` === `b`){
+        console.log(`paso la condicion 2`);
+    } else {
+        console.log(`no paso ninguna condicion`);
+    }
+
+    // EJEMPLO 3
+    if (`a` === `b`){
+        console.log(`paso la condicion 1`); // no se cumple la condicion 1
+        if ( 1 === 1){
+            console.log(`paso la condicion 1.1`); // al no cumplirse la 1 no sigue a la 1.1
+                }
+    }else if (`a` !== `b`){
+        console.log(`paso la condicion 2`); // se cumple la condicion 2
+    } else {
+        console.log(`no paso ninguna condicion`);
+    }
+
+
+    </script>
+</body>
+</html>
