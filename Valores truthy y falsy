@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valores truthy Y falsy</title>
+</head>
+<body>
+    <script>
+    //VALORES truthy Y falsy
+   
+ // son valores que sin ser boolean se comportan como tal
+
+ //FALSY  ( todos estos equivalen a falso)
+    // 0   
+    if(0) console.log(`hola`); // no se ejecuta
+    // ""
+    if("") console.log(`hola`);//  no se ejecuta
+    // NaN
+    if(NaN) console.log(`hola`);//  no se ejecuta
+    // undefined
+    if( undefined) console.log(`hola`);//  no se ejecuta
+    // null
+    if(null) console.log(`hola`);//  no se ejecuta
+   
+  // TRUTHY  ( son los valores que equivalen a verdadero)
+    // string no vacio
+    if("hola") console.log(`ejecuto string`)//  si se ejecuta
+    // Numero diferente de cero
+    if(17) console.log(`ejecuto numero`)//  no se ejecuta
+    // arrays
+    let numbers = [1,2,3,5,4,8] // array
+    if(numbers)console.log(`ejecuto array`); //se ejecuta
+    if ([]) console.log(`ejecuto array vacio`); // se ejecuta
+    // objetos  
+    if({}) console.log(`ejecuto con objeto vacio o lleno`); // se ejecuta
+    </script>
+</body>
+</html>
