@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch</title>
+</head>
+<body>
+    <scrips>
+    //SWITCH
+
+    
+ // SWITCH
+    // cuando queremos comparar un valor con una serie de valores
+        
+        //EJEMPLO
+            //pedimos un numero
+        let pregunta = prompt(`escribe un numero del 1 al 3`);
+        
+        switch (pregunta){
+            case `1`: // si el numero es 1
+                alert(`el uno  es un numero bajo`)  
+                break // para que rompa y continue
+            case `2` : // si el numero es 2
+                alert(`el dos los patitos`)
+                break
+            case `3` : // si el numero es 3
+                alert(`el tres siempre en medio`)       
+                break
+             default:  // si no es ninguno de los anteriores
+                 alert(`te he dicho del 1 al 3`)   
+                 break
+        }
+
+            //EJEMPLO 2
+                //PODEMOS HACER UN CUESTIONARIO
+            let answer = prompt(`la capital de España es
+                    a = Bogota
+                    b = Paris
+                    c = Madrid
+                    d = Londres
+            `).toUpperCase().trim() // .toUpperCase() que sean MAYUSCULAS  -   .trim()  elimina  los espacios
+             // evaluamos con un swich
+             switch(answer){
+                 case `A`:
+                    alert(`Bogota NO es la capital de España`)
+                    break
+                case `B`:
+                    alert(`Paris NO es la capital de España`)
+                    break    
+                case `C`:
+                    alert(`que listo eres ACERTASTE`) 
+                    break
+                case `D`:
+                        alert(`Londres NO es la capital de España`)
+                        break       
+                default:
+                    alert(`no elejiste ninguna`)
+                    break    
+                }
+
+    </script>
+</body>
+</html>
